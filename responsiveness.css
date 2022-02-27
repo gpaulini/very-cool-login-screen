@@ -1,0 +1,13 @@
+@media screen and (min-width: 1285px) {
+    :root {
+        --color-main: #41843f;
+    }
+    
+    #background-video {
+        display: initial;
+    }
+
+    .login-box {
+        zoom: 1.5;
+    }
+}
