@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpubk Like Login Box</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="responsiveness.css">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+    <link rel="stylesheet" href="./assets/css/responsiveness.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/media/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
 </head>
 <body>
     <div class="login-box">
@@ -32,29 +36,9 @@
     </div>
     
     <video autoplay muted loop id="background-video">
-        <source src="./bg-video.mp4" type="video/mp4">
+        <source src="./assets/media/bg-video.mp4" type="video/mp4">
     </video>
 
-    <script>
-        let form = document.querySelector('form');
-        let inputs = document.querySelectorAll('input');
-        let button = document.querySelector('.button');
-        inputs.forEach(el => {
-            el.addEventListener('keyup', evt => {
-                if (inputs[0].value.length > 0 && inputs[1].value.length > 0) {
-                    button.classList.add("ready");
-                } else {
-                    button.classList.remove('ready');
-                }
-            });
-        });
-
-        button.addEventListener('click', evt => {
-            if (evt.target.classList.contains('ready')) {
-                evt.preventDefault();
-                form.submit();
-            }
-        });
-    </script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
